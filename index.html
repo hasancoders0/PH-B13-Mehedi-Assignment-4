@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehedi PH Assignment 2</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./images/fav-icon.png">
+</head>
+<body>
+    <!-- Site Header Section -->
+    <header>
+        <h2>Job Application Tracker</h2>
+        <section class="tracker-counter">
+            <div class="count-total">
+                <h5>Total</h5>
+                <h3 id="js-count-total">8</h3>
+            </div>
+            <div class="count-total">
+                <h5>Interview</h5>
+                <h3 id="js-count-interview">0</h3>
+            </div>
+            <div class="rejected-counter count-total">
+                <h5>Rejected</h5>
+                <h3 id="js-count-rejected">0</h3>
+            </div>
+        </section>
+    </header>
+    <!-- Site Body Content Section -->
+    <main>
+        <h3>Available Jobs</h3>
+        <div class="toggle-btn">
+            <button id="js-show-all" class="active">All</button>
+            <button id="js-show-inteview">Interview</button>
+            <button id="js-show-rejected">Rejected</button>
+        </div>
+        <div class="job-card">
+            <h3>Mobile First Corp</h3>
+            <p class="position color-gray">React Native Developer</p>
+            <div class="job-info color-gray">
+                <span>Remote</span>
+                <span class="info-separetor"></span>
+                <span>Full-time</span>
+                <span class="info-separetor"></span>
+                <span>$130,000-$1750,000</span>
+            </div>
+            <div class="applied-stutas">
+                <span class="not-applied">Not Applied</span>
+                <span class="interview">interview</span>
+                <span class="rejected">Rejected</span>
+            </div>
+            <div class="descripton">
+                <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            </div>
+            <div class="author-action-btn">
+                <button>interview</button>
+                <button>Rejected</button>
+            </div>
+        </div>
+    </main>
+    <!-- Site Footer Section -->
+    <footer class="footer">
+    </footer> 
+</body>
+</html>

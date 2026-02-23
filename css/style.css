@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: #F8FAFC;
+    font-family: 'Inter', sans-serif;
+    color: #002C5C;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 1200px;
+    padding: 45px;
+    margin: auto;
+}
+.d-none{
+    display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #002C5C;
+    font-family: inter, sans-serif;
+}
+.color-gray{
+    color: #64748B;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 45px;
+}
+h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+}
+button, .btn {
+    background: white;
+    border: 1px solid;
+    border-color: rgb(240, 240, 240);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 8px 30px;
+}
+button.active{
+    background: #3B82F6;
+    color: white;
+}
+
+.tracker-counter {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.count-total {
+    width: 100%;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+.toggle-btn {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 18px;
+}
+
+.job-card {
+    background: white;
+    padding: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.job-info {
+    font-size: 0.9em;
+    display: flex;
+    padding: 0;
+    gap: 14px;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.info-separetor {
+    height: 4px;
+    width: 4px;
+    background: gray;
+    border-radius: 100%;
+}
+.applied-stutas {
+    margin-bottom: 4px;
+}
+.applied-stutas span {
+    padding: 8px;
+    text-transform: uppercase;
+}
+.applied-stutas span.not-applied {
+ background: #EEF4FF;
+}
+.applied-stutas span.interview {
+    background: #028702;
+    color: white;
+}
+.applied-stutas span.rejected {
+    background: #EF4444;
+    color: white;
+}
