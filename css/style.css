@@ -67,6 +67,12 @@ button.active{
     border-radius: 8px;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
+#js-count-interview {
+    color: #10B981;
+}
+#js-count-rejected {
+    color: #EF4444;
+}
 .toggle-btn {
     display: flex;
     gap: 16px;
@@ -82,6 +88,8 @@ button.active{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    position: relative;
+    margin-bottom: 20px;
 }
 .job-info {
     font-size: 0.9em;
@@ -90,7 +98,6 @@ button.active{
     gap: 14px;
     align-items: center;
     margin: 8px 0;
-    position: relative;
 }
 
 .info-separetor {
@@ -130,4 +137,13 @@ button.active{
     text-transform: uppercase;
     font-weight: 700;
     margin-left: 4px;
+}
+.delete-job {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#js-delete-job {
+    padding: 6px 8px;
+    border-radius: 100px;
 }
