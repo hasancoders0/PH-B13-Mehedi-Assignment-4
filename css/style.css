@@ -90,6 +90,7 @@ button.active{
     gap: 14px;
     align-items: center;
     margin: 8px 0;
+    position: relative;
 }
 
 .info-separetor {
@@ -115,4 +116,18 @@ button.active{
 .applied-stutas span.rejected {
     background: #EF4444;
     color: white;
+}
+
+#interview-btn {
+    border-color: #10B981;
+    color: #10B981;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#rejected-btn {
+    border-color: #EF4444;
+    color: #EF4444;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 4px;
 }
