@@ -75,6 +75,12 @@ for(const singleInterviewBtn of allInterviewBtn){
             parentDiv.classList.remove('rejected-job');
         }
         updateCounts();
+        if(interviewToggle.classList.contains('active')){
+            interviewToggle.click();
+        }
+        if(rejectedToggle.classList.contains('active')){
+            rejectedToggle.click();
+        }
     });
 }
 
@@ -88,6 +94,12 @@ for(const singleRejectedBtn of allRejectedBtn){
             parentDiv.classList.remove('active-interview');
         }
         updateCounts();
+        if(interviewToggle.classList.contains('active')){
+            interviewToggle.click();
+        }
+        if(rejectedToggle.classList.contains('active')){
+            rejectedToggle.click();
+        }
     });
 }
 
