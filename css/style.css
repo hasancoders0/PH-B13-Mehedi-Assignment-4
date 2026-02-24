@@ -147,3 +147,15 @@ button.active{
     padding: 6px 8px;
     border-radius: 100px;
 }
+.inner-not-found {
+    background: white;
+    padding: 100px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+    margin-bottom: 20px;
+    align-items: center;
+}

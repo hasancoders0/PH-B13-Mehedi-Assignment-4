@@ -5,8 +5,6 @@ const totaljob = document.getElementById('js-count-total');
 const totalInterview = document.getElementById('js-count-interview');
 const totalRejected = document.getElementById('js-count-rejected');
 
-updateCounts();
-
 // Call Button All
 const allJobToggle = document.getElementById('js-show-all');
 // Call Button Interview
@@ -26,6 +24,7 @@ allJobToggle.addEventListener('click', function(){
     for (let everyJob of allJob){
         everyJob.style.display = 'block'
     };
+    checkjobAvailable();
     
 });
 // Action after click Interview button 
@@ -40,6 +39,7 @@ interviewToggle.addEventListener('click', function(){
             interviewJob.style.display = 'block'
         }
     }; 
+    checkjobAvailable();
 });
 // Action after click rejected button
 rejectedToggle.addEventListener('click', function(){
@@ -53,6 +53,7 @@ rejectedToggle.addEventListener('click', function(){
             rejectedJob.style.display = 'block'
         }
     };
+    checkjobAvailable();
 });
 
 
@@ -63,6 +64,9 @@ for(const singleInterviewBtn of allInterviewBtn){
         parentDiv.classList.add('active-interview');
         if(parentDiv.classList.contains('rejected-job')){
             parentDiv.classList.remove('rejected-job');
+        }
+        if(parentDiv.classList.contains('job-not-applied')){
+            parentDiv.classList.remove('job-not-applied');
         }
         updateCounts();
     });
@@ -77,6 +81,9 @@ for(const singleRejectedBtn of allRejectedBtn){
         if(parentDiv.classList.contains('active-interview')){
             parentDiv.classList.remove('active-interview');
         }
+        if(parentDiv.classList.contains('job-not-applied')){
+            parentDiv.classList.remove('job-not-applied');
+        }
         updateCounts();
     });
 }
@@ -87,24 +94,13 @@ for(const singleRejectedBtn of allDeleteBtn){
         const parentDiv = this.closest('.job-card');
         parentDiv.remove();
         updateCounts();
+        checkjobAvailable();
     });
 }
 
 
 
-
-
-// const countTotalJob = jobList.getElementsByClassName('job-card').length;
-// const countTotalInterview = jobList.getElementsByClassName('active-interview').length;
-// const countTotalRejected = jobList.getElementsByClassName('rejected-job').length;
-// // Update Counter
-// totaljob.innerText = countTotalJob;
-// totalInterview.innerText = countTotalInterview;
-// totalRejected.innerText = countTotalRejected;
-
-
 function updateCounts() {
-
     const countTotalJob = jobList.getElementsByClassName('job-card').length;
     const countTotalInterview = jobList.getElementsByClassName('active-interview').length;
     const countTotalRejected = jobList.getElementsByClassName('rejected-job').length;
@@ -113,6 +109,29 @@ function updateCounts() {
     totalInterview.innerText = countTotalInterview;
     totalRejected.innerText = countTotalRejected;
 }
+
+function checkjobAvailable(){
+    const noJobSec = document.getElementById('job-not-found');
+    let found = false;
+
+    for(const searchClass of allJob ){
+        if(searchClass.classList.contains('job-not-applied')){
+            found = true;
+            break;
+        }
+    }
+
+    if(found){
+        noJobSec.style.display = 'none';
+    }else{
+        noJobSec.style.display = 'block';
+    }
+
+};
+
+updateCounts();
+checkjobAvailable();
+
 
 
 
