@@ -5,6 +5,7 @@ const totaljob = document.getElementById('js-count-total');
 const totalInterview = document.getElementById('js-count-interview');
 const totalRejected = document.getElementById('js-count-rejected');
 
+updateCounts();
 
 // Call Button All
 const allJobToggle = document.getElementById('js-show-all');
@@ -55,22 +56,64 @@ rejectedToggle.addEventListener('click', function(){
 });
 
 
-const countTotalJob = jobList.getElementsByClassName('job-card').length;
-const countTotalInterview = jobList.getElementsByClassName('active-interview').length;
-const countTotalRejected = jobList.getElementsByClassName('rejected-job').length;
-// Update Counter
-totaljob.innerText = countTotalJob;
-totalInterview.innerText = countTotalInterview;
-totalRejected.innerText = countTotalRejected;
+const allInterviewBtn = jobList.getElementsByClassName('interview-btn');
+for(const singleInterviewBtn of allInterviewBtn){
+    singleInterviewBtn.addEventListener('click', function(){
+        const parentDiv = this.closest('.job-card');
+        parentDiv.classList.add('active-interview');
+        if(parentDiv.classList.contains('rejected-job')){
+            parentDiv.classList.remove('rejected-job');
+        }
+        updateCounts();
+    });
+}
+
+const allRejectedBtn = jobList.getElementsByClassName('rejected-btn');
+
+for(const singleRejectedBtn of allRejectedBtn){
+    singleRejectedBtn.addEventListener('click', function(){
+        const parentDiv = this.closest('.job-card');
+        parentDiv.classList.add('rejected-job');
+        if(parentDiv.classList.contains('active-interview')){
+            parentDiv.classList.remove('active-interview');
+        }
+        updateCounts();
+    });
+}
+
+const allDeleteBtn = jobList.getElementsByClassName('js-delete-job');
+for(const singleRejectedBtn of allDeleteBtn){
+    singleRejectedBtn.addEventListener('click', function(){
+        const parentDiv = this.closest('.job-card');
+        parentDiv.remove();
+        updateCounts();
+    });
+}
 
 
-// function updateCounts() {
 
-//     const countTotalJob = jobList.getElementsByClassName('job-card').length;
-//     const countTotalInterview = jobList.getElementsByClassName('active-interview').length;
-//     const countTotalRejected = jobList.getElementsByClassName('rejected-job').length;
 
-//     totaljob.innerText = countTotalJob;
-//     totalInterview.innerText = countTotalInterview;
-//     totalRejected.innerText = countTotalRejected;
-// }
+
+// const countTotalJob = jobList.getElementsByClassName('job-card').length;
+// const countTotalInterview = jobList.getElementsByClassName('active-interview').length;
+// const countTotalRejected = jobList.getElementsByClassName('rejected-job').length;
+// // Update Counter
+// totaljob.innerText = countTotalJob;
+// totalInterview.innerText = countTotalInterview;
+// totalRejected.innerText = countTotalRejected;
+
+
+function updateCounts() {
+
+    const countTotalJob = jobList.getElementsByClassName('job-card').length;
+    const countTotalInterview = jobList.getElementsByClassName('active-interview').length;
+    const countTotalRejected = jobList.getElementsByClassName('rejected-job').length;
+
+    totaljob.innerText = countTotalJob;
+    totalInterview.innerText = countTotalInterview;
+    totalRejected.innerText = countTotalRejected;
+}
+
+
+
+
