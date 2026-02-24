@@ -159,3 +159,16 @@ button.active{
     margin-bottom: 20px;
     align-items: center;
 }
+.hero-wappar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.interview{ display: none;}
+.rejected{ display: none;}
+.active-interview .not-applied{display: none;}
+.active-interview .interview{display: unset;}
+.active-interview .rejected{display: none;}
+.rejected-job .not-applied{display: none;}
+.rejected-job .interview{display: none;}
+.rejected-job .rejected{display: unset;}

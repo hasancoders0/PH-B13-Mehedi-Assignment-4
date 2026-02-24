@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehedi PH Assignment 4</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" type="image/png" href="./images/fav-icon.png">
+    <link rel="icon" type="image/png" href="/images/jobs.png">
 </head>
 <body>
     <!-- Site Header Section -->
@@ -28,7 +28,16 @@
     </header>
     <!-- Site Body Content Section -->
     <main>
-        <h3>Available Jobs</h3>
+        <div class="hero-wappar">
+            <h3>Available Jobs</h3>
+            <div>
+                <span id="current-count">
+                    <span id="current-job-count">1</span> of
+                </span>
+                <span id="total-jobs-count">0</span>
+                <span>jobs</span>
+            </div>
+        </div>
         <div class="toggle-btn">
             <button id="js-show-all" class="">All</button>
             <button id="js-show-inteview">Interview</button>
@@ -43,24 +52,24 @@
 
         </div>
         <div id="job-list">
-            <div class="job-card job-not-applied">
+            <div class="job-card">
                 <div class="inner-job-post">
-                    <h3>Mobile First Corp</h3>
-                    <p class="position color-gray">React Native Developer</p>
+                    <h3>Nexora Technologies</h3>
+                    <p class="position color-gray">Frontend Developer</p>
                     <div class="job-info color-gray">
-                        <span>Remote</span>
+                        <span>San Francisco, CA, USA</span>
                         <span class="info-separetor"></span>
                         <span>Full-time</span>
                         <span class="info-separetor"></span>
-                        <span>$130,000-$1750,000</span>
+                        <span>$95,000 – $120,000</span>
                     </div>
                     <div class="applied-stutas">
                         <span class="not-applied">Not Applied</span>
-                        <span class="interview d-none">interview</span>
-                        <span class="rejected d-none">Rejected</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
                     </div>
                     <div class="descripton">
-                        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <p>We are looking for a skilled Frontend Developer proficient in React, JavaScript, and modern CSS frameworks. You will collaborate with designers and backend engineers to build responsive and user-friendly web applications.</p>
                     </div>
                     <div class="author-action-btn">
                         <button class="interview-btn">interview</button>
@@ -71,24 +80,24 @@
                     </div>
                 </div>
             </div>
-            <div class="job-card job-not-applied">
+            <div class="job-card">
                 <div class="inner-job-post">
-                    <h3>Mobile First Corp</h3>
-                    <p class="position color-gray">React Native Developer</p>
+                    <h3>BrightPath Solutions</h3>
+                    <p class="position color-gray">Digital Marketing Specialist</p>
                     <div class="job-info color-gray">
                         <span>Remote</span>
                         <span class="info-separetor"></span>
                         <span>Full-time</span>
                         <span class="info-separetor"></span>
-                        <span>$130,000-$1750,000</span>
+                        <span>$60,000 – $75,000</span>
                     </div>
                     <div class="applied-stutas">
                         <span class="not-applied">Not Applied</span>
-                        <span class="interview d-none">interview</span>
-                        <span class="rejected d-none">Rejected</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
                     </div>
                     <div class="descripton">
-                        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <p>Seeking a creative Digital Marketing Specialist to manage SEO, PPC campaigns, email marketing, and social media strategy to drive brand growth and online engagement.</p>
                     </div>
                     <div class="author-action-btn">
                         <button class="interview-btn">interview</button>
@@ -99,24 +108,24 @@
                     </div>
                 </div>
             </div>
-            <div class="job-card job-not-applied">
+            <div class="job-card">
                 <div class="inner-job-post">
-                    <h3>Mobile First Corp</h3>
-                    <p class="position color-gray">React Native Developer</p>
+                    <h3>GreenLeaf Innovations</h3>
+                    <p class="position color-gray">UI/UX Designer</p>
                     <div class="job-info color-gray">
-                        <span>Remote</span>
+                        <span>Austin, TX, USA</span>
                         <span class="info-separetor"></span>
-                        <span>Full-time</span>
+                        <span>Contract</span>
                         <span class="info-separetor"></span>
-                        <span>$130,000-$1750,000</span>
+                        <span>$40 – $60 per hour</span>
                     </div>
                     <div class="applied-stutas">
                         <span class="not-applied">Not Applied</span>
-                        <span class="interview d-none">interview</span>
-                        <span class="rejected d-none">Rejected</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
                     </div>
                     <div class="descripton">
-                        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <p>Design intuitive user interfaces and improve user experience across web and mobile platforms. Strong knowledge of Figma and user research methods required.</p>
                     </div>
                     <div class="author-action-btn">
                         <button class="interview-btn">interview</button>
@@ -127,24 +136,248 @@
                     </div>
                 </div>
             </div>
-            <div class="job-card job-not-applied">
+            <div class="job-card rejected-job">
                 <div class="inner-job-post">
-                    <h3>Mobile First Corp</h3>
-                    <p class="position color-gray">React Native Developer</p>
+                    <h3>Apex Financial Group</h3>
+                    <p class="position color-gray">Financial Analyst</p>
                     <div class="job-info color-gray">
-                        <span>Remote</span>
+                        <span>Chicago, IL, USA</span>
                         <span class="info-separetor"></span>
                         <span>Full-time</span>
                         <span class="info-separetor"></span>
-                        <span>$130,000-$1750,000</span>
+                        <span>$70,000 – $90,000 per year</span>
                     </div>
                     <div class="applied-stutas">
                         <span class="not-applied">Not Applied</span>
-                        <span class="interview d-none">interview</span>
-                        <span class="rejected d-none">Rejected</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
                     </div>
                     <div class="descripton">
-                        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <p>Analyze financial data, prepare reports, and provide forecasting insights to support strategic business decisions.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="inner-job-post">
+                    <h3>MedCore Health Services</h3>
+                    <p class="position color-gray">Registered Nurse</p>
+                    <div class="job-info color-gray">
+                        <span>Los Angeles, CA, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Full-time</span>
+                        <span class="info-separetor"></span>
+                        <span>$80,000 – $100,000 per year</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Provide compassionate patient care, administer medications, and collaborate with medical staff to ensure quality healthcare services.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card active-interview">
+                <div class="inner-job-post">
+                    <h3>SkyHigh Airlines</h3>
+                    <p class="position color-gray">Customer Service Representative</p>
+                    <div class="job-info color-gray">
+                        <span>Dallas, TX, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Full-time</span>
+                        <span class="info-separetor"></span>
+                        <span>$18 – $25 per hour</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Assist passengers with booking, check-in, and inquiries while delivering exceptional customer service in a fast-paced airport environment.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="inner-job-post">
+                    <h3>QuantumSoft Labs</h3>
+                    <p class="position color-gray">Backend Developer</p>
+                    <div class="job-info color-gray">
+                        <span>Seattle, WA, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Full-time</span>
+                        <span class="info-separetor"></span>
+                        <span>$100,000 – $130,000 per year</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Develop and maintain scalable server-side applications using Node.js and databases such as PostgreSQL and MongoDB.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card active-interview">
+                <div class="inner-job-post">
+                    <h3>UrbanNest Realty</h3>
+                    <p class="position color-gray">Real Estate Agent</p>
+                    <div class="job-info color-gray">
+                        <span>Miami, FL, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Commission-Based</span>
+                        <span class="info-separetor"></span>
+                        <span>$50,000 – $150,000 per year</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Assist clients in buying, selling, and renting properties. Strong negotiation and communication skills required.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="inner-job-post">
+                    <h3>EduSmart Academy</h3>
+                    <p class="position color-gray">High School Math Teacher</p>
+                    <div class="job-info color-gray">
+                        <span>Boston, MA, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Full-time</span>
+                        <span class="info-separetor"></span>
+                        <span>$55,000 – $70,000 per year</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Teach mathematics to high school students, develop lesson plans, and foster a positive learning environment.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="inner-job-post">
+                    <h3>NovaRetail</h3>
+                    <p class="position color-gray">Store Manager</p>
+                    <div class="job-info color-gray">
+                        <span>Atlanta, GA, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Full-time</span>
+                        <span class="info-separetor"></span>
+                        <span>$50,000 – $65,000 per year</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Oversee daily retail store operations, manage staff, handle inventory, and ensure sales targets are achieved.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card">
+                <div class="inner-job-post">
+                    <h3>CyberShield Security</h3>
+                    <p class="position color-gray">Cybersecurity Analyst</p>
+                    <div class="job-info color-gray">
+                        <span>Washington, DC, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Full-time</span>
+                        <span class="info-separetor"></span>
+                        <span>$110,000 – $140,000 per year</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Monitor systems for security breaches, perform risk assessments, and implement security protocols to safeguard company data.</p>
+                    </div>
+                    <div class="author-action-btn">
+                        <button class="interview-btn">interview</button>
+                        <button class="rejected-btn">Rejected</button>
+                    </div>
+                    <div class="delete-job">
+                        <button class="js-delete-job"><svg width="15px" height="15px" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path fill="#000000" d="M160 256H96a32 32 0 010-64h256V95.936a32 32 0 0132-32h256a32 32 0 0132 32V192h256a32 32 0 110 64h-64v672a32 32 0 01-32 32H192a32 32 0 01-32-32V256zm448-64v-64H416v64h192zM224 896h576V256H224v640zm192-128a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32zm192 0a32 32 0 01-32-32V416a32 32 0 0164 0v320a32 32 0 01-32 32z"/></svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="job-card active-interview">
+                <div class="inner-job-post">
+                    <h3>FreshBite Foods</h3>
+                    <p class="position color-gray">Supply Chain Coordinator</p>
+                    <div class="job-info color-gray">
+                        <span>Denver, CO, USA</span>
+                        <span class="info-separetor"></span>
+                        <span>Full-time</span>
+                        <span class="info-separetor"></span>
+                        <span>$55,000 – $75,000 per year</span>
+                    </div>
+                    <div class="applied-stutas">
+                        <span class="not-applied">Not Applied</span>
+                        <span class="interview">interview</span>
+                        <span class="rejected">Rejected</span>
+                    </div>
+                    <div class="descripton">
+                        <p>Coordinate logistics, manage vendor relationships, and ensure timely delivery of goods across distribution centers.</p>
                     </div>
                     <div class="author-action-btn">
                         <button class="interview-btn">interview</button>
